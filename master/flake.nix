@@ -10,7 +10,7 @@
   inputs.src-io-egl-master.flake = false;
   inputs.src-io-egl-master.ref   = "refs/heads/master";
   inputs.src-io-egl-master.owner = "nimious";
-  inputs.src-io-egl-master.repo  = "io-egl.git";
+  inputs.src-io-egl-master.repo  = "io-egl";
   inputs.src-io-egl-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
