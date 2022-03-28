@@ -11,7 +11,6 @@
   inputs.src-egl-master.ref   = "refs/heads/master";
   inputs.src-egl-master.owner = "nimious";
   inputs.src-egl-master.repo  = "io-egl";
-  inputs.src-egl-master.dir   = "";
   inputs.src-egl-master.type  = "github";
   
   inputs."x11".owner = "nim-nix-pkgs";
