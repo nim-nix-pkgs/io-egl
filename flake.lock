@@ -1,5 +1,33 @@
 {
   "nodes": {
+    "egl-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-egl-master": "src-egl-master",
+        "x11": "x11"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650750213,
+        "narHash": "sha256-UxY+GiLjrsVYvyhZx/ROTbNmUqQJvbsra1wJ674Xj2w=",
+        "owner": "nim-nix-pkgs",
+        "repo": "egl",
+        "rev": "eae4d7322f0fa2d162be0253cdcf40afb12abf8b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "egl",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -34,10 +62,9 @@
     },
     "root": {
       "inputs": {
+        "egl-master": "egl-master",
         "flakeNimbleLib": "flakeNimbleLib",
-        "nixpkgs": "nixpkgs",
-        "src-egl-master": "src-egl-master",
-        "x11": "x11"
+        "nixpkgs": "nixpkgs"
       }
     },
     "src-egl-master": {
@@ -46,14 +73,14 @@
         "lastModified": 1561091370,
         "narHash": "sha256-KOvBlguFoUm+iZ0X7eATtj0SPyWZEtl7FRhFR9HgESs=",
         "owner": "nimious",
-        "repo": "io-egl",
+        "repo": "egl",
         "rev": "83439cd11aceb1b76b50f628d80fdd740b1077e3",
         "type": "github"
       },
       "original": {
         "owner": "nimious",
         "ref": "refs/heads/master",
-        "repo": "io-egl",
+        "repo": "egl",
         "type": "github"
       }
     },
@@ -77,9 +104,11 @@
     "x11": {
       "inputs": {
         "flakeNimbleLib": [
+          "egl-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "egl-master",
           "nixpkgs"
         ],
         "src-x11-master": "src-x11-master"
